@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-class Person {//ºÎ¸ğ Å¬·¡½º
+//4 ì£¼ì°¨ 1ë²ˆì§¸ ì½”ë“œ
+//ìƒì†, ìì‹ í´ë˜ìŠ¤ì˜ ê¸°ë³¸í˜•íƒœ
+class Person {//ë¶€ëª¨ í´ë˜ìŠ¤
 protected:
     string name;
     int age;
@@ -12,14 +13,15 @@ public:
 
 };
 
-class Student : public Person {//ÀÚ½ÄÅ¬·¡½º(Á¢±Ù ÁöÁ¤ÀÚ: public)
+class Student : public Person {//ìì‹í´ë˜ìŠ¤(ì ‘ê·¼ ì§€ì •ì: public)
 private:
-    string major;
+    string major;//ìì‹ì˜ ë©¤ë²„ ë³€ìˆ˜
 
 public:
-    Student(string n, int a, string m) : Person(n, a), major(m) {}
-};//»ı¼ºÀÚ ÃÊ±âÈ­ ¸®½ºÆ® »ç¿ë
+    Student(string n, int a, string m) : Person(n, a), major(m) {}//ìì‹ì˜ ìƒì„±ì
+};//ìƒì„±ì ì´ˆê¸°í™” ë¦¬ìŠ¤íŠ¸ ì‚¬ìš©
 
 int main() {
-    Student kim("±èÇöÁØ", 23, "°ÔÀÓ°øÇĞ");
+    Student kim("ê¹€í˜„ì¤€", 23, "ê²Œì„ê³µí•™");
+
 }
